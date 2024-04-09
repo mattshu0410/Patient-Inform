@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Todo List</h1>
+<ul>
+    {% for todo in todos %}
+        <li>
+            <!-- Basically double brackets prints the actual value rather than the html-->
+            {{ todo.title }}: {% if todo.completed %}
+                <span>Completed</span>
+            {% else %}
+                <span>Not Completed</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
