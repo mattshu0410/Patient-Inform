@@ -1,6 +1,6 @@
 // Original Vercel Postgres
-//const { db } = require('@vercel/postgres');
-const { createClient: db } = require('./utils/supabase/server');
+const { db } = require('@vercel/postgres');
+//const { createClient: db } = require('./utils/supabase/server');
 
 const {
   invoices,
