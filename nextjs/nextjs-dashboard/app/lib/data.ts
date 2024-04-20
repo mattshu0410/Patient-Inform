@@ -235,7 +235,7 @@ export async function fetchFilteredInvoices(query: string, currentPage: number) 
       query : query
     })
     if (error) throw error
-    else console.log(invoices)
+    //else console.log(invoices)
 
     return invoices;
   } catch (error) {
